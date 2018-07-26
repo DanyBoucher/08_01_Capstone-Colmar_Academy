@@ -10,8 +10,56 @@ html {
 
 body {
   min-width: 475px;
+
+  /* font initiale */
+  /* font-family: "Cormorant Garamond", serif; */
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  /* color: #5d5d5d; */
+  color: #615e5d;
+}
+
+.paragraph {
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+footer {
   font-family: "Cormorant Garamond", serif;
 }
+
+#company-bold {
+  font-weight: 700;
+  color: #615e5d;
+}
+
+#company-pale {
+  color: #615e5d;
+}
+
+#bold {
+  font-weight: 500;
+  color: #615e5d;
+}
+
+#start {
+  color: #c5c0bc;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+
 
 /* div {
   border: 1px solid black;
@@ -49,6 +97,7 @@ footer {
 .logo img {
   height: 2.5rem;
   padding-right: .5rem;
+  color: red;
 }
 
 nav ul {
@@ -64,7 +113,7 @@ nav li {
 }
 
 .large-container {
-  background-color: #dcdcdc;
+  background-color: #c5c0bc;
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -106,15 +155,17 @@ nav li {
   justify-content: space-around;
 }
 
-.banner-text h1,
-.banner-text h2 {
+.banner-text h1 {
   padding-bottom: 1rem;
-  /* text-align: center; */
+}
+
+.banner-text h3 {
+  padding-bottom: 2rem;
 }
 
 .banner-text p {
   text-align: center;
-  background-color: gray;
+  background-color: #615e5d;
   padding: .5rem 0 .5rem 0;
   border-radius: .15rem;
 }
@@ -236,20 +287,25 @@ nav li {
 }
 
 .exhibit {
-  background-color: white;
   padding-bottom: 0;
+}
+
+.pale-background,
+.bloc {
+  background-color: #eae5e1;
 }
 
 #right-exhibit {
   justify-content: flex-start;
 }
 
-footer{
+footer {
   padding-bottom: 1rem;
 }
 
 #footer {
   border-top: 1px solid #e4e4e4;
+  background-color: #c5c0bc;
   opacity: 0.6;
 }
 
@@ -261,6 +317,17 @@ footer{
 #footer-flex,
 #footer nav ul {
   align-items: flex-start;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+footer i {
+  padding: 0 0.5rem 0 0.5rem;
+  opacity: 0.5;
 }
 
 
