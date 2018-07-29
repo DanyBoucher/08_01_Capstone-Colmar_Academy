@@ -20,9 +20,17 @@
   <div class="top-head-fixed">
     <div class="container pale-background">
       <header>
+
+        <nav class="navigation-mobile">
+          <img src="./resources/images/ic-logo.svg" alt="company's logo">
+          <img src="./resources/images/ic-on-campus.svg" alt="campus icon">
+          <img src="./resources/images/ic-online.svg" alt="online icon">
+          <img src="./resources/images/ic-login.svg" alt="login icon">
+        </nav>
+
         <div class="company">
           <div class="logo">
-            <img src="./resources/images/ic-logo.svg" alt="logo">
+            <img src="./resources/images/ic-logo.svg" alt="company's logo">
           </div>
           <div class="company-name">
             <span id="company-bold">COLMAR</span><span id="company-pale">ACADEMY</span>
@@ -32,7 +40,7 @@
         <!-- NAVIGATOR -->
 
         <!-- <div class="top-right-header"> -->
-          <nav>
+          <nav class="navigation">
             <ul>
               <li class="social-medias"><i class="fa fa-pinterest fa-lg"></i></li>
               <li class="social-medias"><i class="fa fa-twitter fa-lg"></i></li>
@@ -57,7 +65,12 @@
   <!-- _____________________________________________________________________________ -->
   <div class="content">
     <!-- BANNER -->
+    <div class="banner-image-large">
+
+    </div>
+
     <div class="large-container" id="banner" >
+
       <div class="container">
         <div class="banner">
           <div class="banner-image">
@@ -76,9 +89,9 @@
 
     <!-- _____________________________________________________________________________ -->
     <!-- SERVICES -->
-    <div class="container services pale-background">
+    <div class="container services pale-background"  id="services">
       <!-- LEFT SECTION - It doesn't hurt to keep practicing -->
-      <div class="left">
+      <div class="left" id="left-services">
         <img src="./resources/images/information-main.jpg" alt="a man is reading">
         <h1>It doesn't hurt to keep practicing</h1>
         <p class="paragraph">Et est nomine veterum et gentium vicinarum atque pervigil ex provinciae Bostram nomine nostris et legibus vicinarum hanc quae incolarum hanc legibus cautos obtemperare et quoque conserta oppleta alio castrisque.</p>
@@ -88,7 +101,10 @@
       <div class="right">
         <!-- ORIENTATION DATE -->
         <div class="service first-top">
-          <div class="image-service">
+          <div class="image-service mobile">
+            <img src="./resources/images/information-orientation-mobile.jpg" alt="bird eye">
+          </div>
+          <div class="image-service no-mobile">
             <img src="./resources/images/information-orientation.jpg" alt="bird eye">
           </div>
           <div class="text">
@@ -99,7 +115,10 @@
         </div>
         <!-- OUR CAMPUS -->
         <div class="service">
-          <div class="image-service">
+          <div class="image-service mobile">
+            <img src="./resources/images/information-campus-mobile.jpg" alt="campus">
+          </div>
+          <div class="image-service no-mobile">
             <img src="./resources/images/information-campus.jpg" alt="campus">
           </div>
             <div class="text">
@@ -110,12 +129,17 @@
         </div>
         <!-- OUR GUEST LECTURE -->
         <div class="service">
-          <div class="image-service">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="man with a hat">
+          <div class="image-service mobile">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack with a hat">
+          </div>
+          <div class="image-service no-mobile">
+            <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack with a hat">
           </div>
             <div class="text">
               <h2>Our guest lecture</h2>
-              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <p id="Oliver-long">Join a keynote with Oliver Sack about music in medical treatment</p>
+              <p id="Oliver-short">Join a keynote with Oliver Sack</p>
+              <p id="Oliver-very-short">Join Oliver Sack</p>
               <a href="#">Read more</a>
             </div>
         </div>
@@ -219,8 +243,8 @@
 
       <div class="container services">
         <!-- LEFT SECTION - VIDEO -->
-        <div class="left">
-          <video src="./resources/videos/thesis.mp4" controls width="100%" poster="./resources/videos/thesis.jpg">
+        <div class="left" id="left-exhibit">
+          <video src="./resources/videos/thesis.mp4" controls width="100%">
             Video not supported
           </video>
           <h2>Reimagine urban</h1>
@@ -264,11 +288,14 @@
           </div>
 
           <!-- FOOTER - MIDDLE SECTION -->
-          <ul>
-            <li><i class="fa fa-pinterest fa-lg"></i></li>
-            <li><i class="fa fa-twitter fa-lg"></i></li>
-            <li><i class="fa fa-facebook fa-lg"></i></li>
-          </ul>
+          <div class="social-medias-icon">
+            <ul>
+              <li><i class="fa fa-pinterest fa-lg"></i></li>
+              <li><i class="fa fa-twitter fa-lg"></i></li>
+              <li><i class="fa fa-facebook fa-lg"></i></li>
+            </ul>
+          </div>
+
 
           <!-- FOOTER - RIGHT SECTION - NAVIGATOR -->
           <nav>
