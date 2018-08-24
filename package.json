@@ -1,0 +1,8 @@
+{
+  "name": "08_01_capstone-colmar_academy",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^5.0.1"
+  }
+}
