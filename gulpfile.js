@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-watch = require('gulp-watch');
+watch = require('gulp-watch'),
+browserSync = require('browser-sync').create();
 
 gulp.task('default', function() {
   console.log('Hooray...________________________________________________________!');
@@ -14,11 +15,24 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
+
+  browserSync.init({
+    notify: false,
+    server: {
+      baseDir: "../08_01_Capstone-Colmar_Academy"
+    }
+  });
+
   watch('./index.html', function() {
-    gulp.start('html');
+    browserSync.reload();
   });
 
   watch('./resources/css/**/*.css', function() {
-    gulp.start('styles');
+    gulp.start('cssInject');
   });
+});
+
+gulp.task('cssInject', ['styles'],function() {
+  return gulp.src('./resources/css/style.css')
+    .pipe(browserSync.stream());
 });
